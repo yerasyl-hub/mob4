@@ -1,0 +1,187 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.box{
+    width: 700px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 25px;
+
+    box-shadow: 4px 4px 8px 0px rgba(10, 49, 148, 0.2);
+    border-radius: 15px;
+}
+.box .column1{
+    display: grid;
+    grid-template-rows: 100px 250px 200px;
+    background: linear-gradient(180deg, rgb(62, 22, 241) 0%, rgb(90, 85, 230) 100%);
+    border-radius: 20px;
+}
+.box .column1 .column1-text{
+    text-align: center;
+    place-content: center;
+    min-height: 10%;
+}
+.box .column1 .column1-row2{
+    background: linear-gradient(0deg, rgb(51, 5, 217) 0%, rgb(104, 89, 239) 100%);
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    margin-left: 60px;
+    border-radius: 50%;
+}
+.box .column1 .column1-row2 h3{
+    margin-top: 70px;
+    font-size: 50px;
+    color: white;
+}
+.box .column1 .column1-row2 p{
+    font-size: 16px;
+    color: white;
+}
+.box .column1 .column1-row3{
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-rows: 20% 40%;
+}
+.box .column1 .column1-row3 h3{
+    font-size: 28px;
+}
+.box .column1 .column1-row3 p{
+    font-size: 17px;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+
+.box .column2{
+    display: grid;
+    grid-template-rows: 100px 350px 50px;
+    border-radius: 15px;
+}
+.box .column1 .column1-text h2{
+    color: rgba(255, 255, 255, 0.682);
+}
+.box .column2 .column2-header h2{
+    margin-top: 35px;
+    color: rgb(35, 35, 71);
+}
+.box .column2 .column2-main{
+    display: grid;
+    grid-template-rows: repeat(4, 65px);
+    gap: 10px;
+}
+.box .column2 .column2-main .column2-row1{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 32px 160px 138px;
+    background-color: rgba(221, 4, 4, 0.345);
+    border-radius: 10px;
+    place-content: center;
+}
+.box .column2 .column2-main p{
+    color: black;
+    font-weight: 700;
+}
+.box .column2 p span{
+    font-weight: 800;
+    color: rgb(60, 60, 99);
+}
+.box .column2 .column2-main .column2-row1 h3{
+    color: red;
+}
+.box .column2 .column2-main .column2-row3 h3{
+    color: green;
+}
+.box .column2 .column2-main .column2-row4 h3{
+    color: purple;
+}
+
+.box .column2 .column2-main .column2-row2{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 32px 160px 138px;
+    background-color: rgba(244, 171, 37, 0.386);
+    border-radius: 10px;
+    place-content: center;
+}
+.box .column2 .column2-main .column2-row2 h3{
+    color: rgb(204, 134, 4);
+}
+.box .column2 .column2-main img{
+    margin-left: 30px;
+}
+.box .column2 .column2-main h3{
+    margin-left: 30px;
+}
+
+
+.box .column2 .column2-main .column2-row3{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 32px 160px 138px;
+    background-color: rgba(3, 175, 3, 0.344);
+    border-radius: 10px;
+    place-content: center;
+}
+.box .column2 .column2-main .column2-row4{
+    width: 300px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: 32px 160px 138px;
+    background-color: rgba(148, 64, 227, 0.325);
+    border-radius: 10px;
+    place-content: center;
+}
+.box .column2 .button button{
+    width: 300px;
+    height: 65px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(33, 33, 67);
+}
+.box .column2 .button button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+@media screen and (max-width: 700px){
+    body{
+        width: 430px;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+        height: 1100px;
+    }
+    .column1,.column2{
+        width: 430px;
+        display: grid;
+        place-content: center;
+    }
+    
+    .box .column1{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .box .column1 .column1-row2{
+        margin-left: 100px;
+    }
+
